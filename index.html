@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="Stil.css">
+<style> 
+div {
+  width: 100px;
+  height: 50px;
+  
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
+  animation: mymove 20s infinite;
+}  
+
+
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}  
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease-in-out;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 500px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {left: 200px;}
+  to {left: 800px;}
+  
+ 
+  
+}
+
+
+img {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <h3><i class="mdi-content-send black-text" > Klikom na sliku izabrati oblast</i></h3>
+      </div>
+ </nav>
+ 
+<div  id="div1" > <a href="http://materializecss.com/getting-started.html" id="download-button" ><img src= "u2.jpg" height="250px" width="250px" border="5 solid grey"> </img> Književnost</a></div> <br><br><br><br><br><br><br><br><br><br><br><br>
+ 
+<div  id="div2" > <a href="http://facebook.com" id="download-button" ><img src= "music.jpg" height="250px" width="250px" > </img> Muzika</a></div> <br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div  id="div3" > <a href="http://facebook.com" id="download-button" ><img src= "vajarstvo.jpg" height="250px" width="250px"> </img> Slikarstvo i vajarstvo</a></div> <br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div  id="div4" > <a href="http://facebook.com" id="download-button" ><img src= "movies.jpg" height="250px" width="250px"> </img> Filmovi</a></div> <br><br><br><br><br><br><br>
+    
+   <table id="vrh" cellpadding=0px cellspacing=0px width=160  <img src="u2.jpg" width=100% bgcolor="black"> 
+<td valign=top width=160px >
+					<div class="loader"></div> 
+					<ul type="none">
+					  <h3><i class="mdi-content-send brown-text" >“Ko čini dobro, od njega se još više dobra očekuje.” </i></h3>
+						
+					</ul>
+					
+				</td>
+
+
+
+    </table>   
+   
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+</html>
